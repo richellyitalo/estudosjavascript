@@ -1,4 +1,4 @@
-// Fabricador
+// Factory
 var criaHero = function(nome, superpoder)
 {
 	return {

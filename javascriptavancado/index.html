@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header"><a href="" id="navTitle" class="navbar-brand"></a></div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="form-inline">
+      <div class="form-group">
+        <input type="text" id="desc" class="form-control" placeholder="Description">
+      </div>
+      <div class="form-group">
+        <input type="text" id="amount" class="form-control" placeholder="Amount">
+      </div>
+      <div class="form-group">
+        <input type="text" id="value" class="form-control" placeholder="Value">
+      </div>
+      <div id="errors" class="alert alert-danger" style="display: none;"></div>
+      <span id="btnsUpdate" style="display: none;">
+        <span id="updateID"></span>
+        <button onclick="updateProduct()" class="btn btn-primary">Update</button>
+        <button onclick="resetForm()" class="btn btn-warning">Cancelar</button>
+      </span>
+      <span id="btnAdd">
+        <button onclick="addProduct()" class="btn btn-success">Add</button>
+        <button onclick="resetForm()" class="btn btn-success">Reset</button>
+        <button onclick="deleteList()" class="btn btn-success">Delete list</button>
+      </span>
+    </div>
+    <table id="listTable" class="table">
+    </table>
+  </div>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div id="totalValue" class="container text-center">
+    </div>
+  </nav>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

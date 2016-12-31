@@ -1,3 +1,6 @@
+## associando o querySelector ao '$'
+`let $ = document.querySelector.bind(document);`
+
 # classe em ES5 e ES6
 
 ## ES6
